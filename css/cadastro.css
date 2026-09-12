@@ -1,0 +1,59 @@
+
+.signup-box {
+  max-width: 430px;
+}
+
+.signup-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  color: #a2aab4;
+  font-size: 13px;
+}
+
+.signup-benefits span {
+  color: #c2c9d0;
+  margin-right: 9px;
+}
+
+.field-hint {
+  color: #626a74;
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.terms-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #858d97;
+  font-size: 11px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.terms-check input {
+  flex-shrink: 0;
+  margin-top: 3px;
+  accent-color: #bfc5cc;
+}
+
+.terms-check a {
+  color: #c1c7ce;
+  text-decoration: underline;
+}
+
+.account-login {
+  margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+  .signup-box {
+    max-width: 440px;
+  }
+
+  .signup-benefits {
+    margin-top: 24px;
+  }
+}

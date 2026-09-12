@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesse sua conta Stocontrol e gerencie seu estoque.">
+  <title>Entrar — StoControl</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-page">
+
+  <main class="login-wrapper">
+    <section class="login-brand">
+      <a href="index.html" class="logo">Sto<span>Control</span></a>
+
+      <div class="brand-message">
+        <span class="eyebrow">GESTÃO INTELIGENTE</span>
+        <h1>Seu estoque.<br><span>Seu controle.</span></h1>
+        <p>
+          Acesse sua conta e continue gerenciando sua operação
+          de forma simples e eficiente.
+        </p>
+      </div>
+
+      <div class="brand-footer">
+        <span>© 2026 Stocontrol</span>
+        <span>Gestão sem complicação.</span>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-box">
+        <div class="login-heading">
+          <h2>Bem-vindo de volta</h2>
+          <p>Entre na sua conta para continuar.</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <div class="label-row">
+              <label for="password">Senha</label>
+              <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+            </div>
+
+            <div class="password-field">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+                autocomplete="current-password"
+                required
+                minlength="6"
+              >
+              <button type="button" id="togglePassword" aria-label="Mostrar senha">Mostrar</button>
+            </div>
+          </div>
+
+          <label class="remember-me">
+            <input type="checkbox" id="remember">
+            <span>Manter conectado</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Entrar na conta <span>→</span>
+          </button>
+
+          <div class="form-message" id="formMessage" role="alert"></div>
+        </form>
+
+        <div class="login-divider">
+          <span>ou</span>
+        </div>
+
+        <p class="signup-text">
+          Ainda não possui uma conta?
+          <a href="cadastro.html">Criar agora</a>
+        </p>
+
+        <p class="login-terms">
+          Ao entrar, você concorda com nossos
+          <a href="#">Termos de uso</a> e
+          <a href="#">Política de privacidade</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
